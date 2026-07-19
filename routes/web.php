@@ -10,6 +10,7 @@ Route::get('/', function () {
 
 Route::get('/sale', [BusyController::class, 'create'])->name('busy.sale.create');
 Route::post('/sale', [BusyController::class, 'store'])->name('busy.sale.store');
+Route::get('/busy/test-query', [BusyController::class, 'testCustomerQuery']);
 
 //for account creation
 Route::get('/busy/account/create', [BusyAccountController::class, 'create']);
